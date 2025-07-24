@@ -391,3 +391,84 @@ html {
 html {
   scroll-padding-top: 100px;
 }
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+
+  .header-top {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Retira position absolute do título e centraliza no fluxo */
+  header h1 {
+    position: static;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+
+  /* Navbar fica escondida inicialmente, vira menu hambúrguer */
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* padrão escondido */
+    background-color: var(--marrom-claro);
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .navbar a {
+    padding: 12px 20px;
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  /* Botão para abrir/fechar menu */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  /* Mostra navbar quando ativo */
+  .navbar.active {
+    display: flex;
+  }
+
+  /* Ajusta controles do usuário para ficar mais organizado */
+  .user-controls {
+    position: static;
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+    order: 3;
+  }
+
+  /* Filtros com largura total */
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .filters input,
+  .filters select {
+    min-width: auto;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+}
