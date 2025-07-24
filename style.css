@@ -132,7 +132,7 @@ header h1 {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 5px 5px 30px; /* topo, laterais, baixo */
+  padding: 10px 10px 40px; /* topo, laterais, baixo */
 }
 
 
@@ -357,7 +357,7 @@ footer a {
 /* Seções Sobre e Contato */
 .extra-section {
   background-color: var(--bege);
-  padding: 20px 15px;
+  padding: 30px 20px;
   border-top: 2px solid var(--laranja-terra);
 }
 
