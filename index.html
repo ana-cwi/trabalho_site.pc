@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Receitas Saborosas</title>
+ <link rel="stylesheet" href="style.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <header>
+
+    <div class="header-top">
+  <nav class="navbar">
+   <a href="#home-section">Home</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <h1>Receitas Saborosas</h1>
+
+  <div class="user-controls">
+    <button id="login-btn" title="Login">🔑 Entrar</button>
+    <div id="user-info" class="hidden">
+      <span id="user-name"></span> | Pontos: <span id="user-points">0</span>
+    </div>
+  </div>
+</div>
+
+
+     <div class="filters">
+       <input type="text" id="search" placeholder="Buscar por nome ou ingrediente" />
+<select id="tempo">
+  <option value="">Tempo de preparo</option>
+  <option data-min="0" data-max="30">Até 30 min</option>
+  <option data-min="31" data-max="60">Até 1h</option>
+  <option data-min="61">Mais de 1h</option>
+</select>
+
+       <select id="facilidade">
+         <option value="">Facilidade</option>
+         <option value="fácil">Fácil</option>
+         <option value="média">Média</option>
+         <option value="trabalhosa">Trabalhosa</option>
+       </select>
+     </div>
+   </div>
+ </header>
+
+<section id="home-section" class="extra-section">
+  <div class="container">
+    <h2>Home</h2>
+    <p>Bem-vindo ao Receitas Saborosas! Aqui você encontra receitas deliciosas, fáceis e práticas para o seu dia a dia.</p>
+  </div>
+</section>
+
+ <main id="home">
+   <section id="salgadas">
+     <h2>Receitas Salgadas</h2>
+     <div class="recipes-list"></div>
+   </section>
+
+   <section id="doces">
+     <h2>Receitas Doces</h2>
+     <div class="recipes-list"></div>
+   </section>
+ </main>
+
+ <!-- Seção Sobre -->
+ <section id="sobre" class="extra-section">
+   <div class="container">
+     <h2>Sobre</h2>
+     <p>Este site foi criado com o objetivo de compartilhar receitas deliciosas, simples e práticas para todos os gostos. Ideal para quem ama cozinhar ou está começando agora!</p>
+   </div>
+ </section>
+
+ <!-- Seção Contato -->
+ <section id="contato" class="extra-section">
+   <div class="container">
+     <h2>Contato</h2>
+     <p>Para feedbacks, dúvidas ou sugestões, preencha o formulário:<br />
+     <a href="https://forms.gle/YGTD3FKKatozejhU9" target="_blank">https://forms.gle/YGTD3FKKatozejhU9</a></p>
+   </div>
+ </section>
+
+ <!-- Modal de login -->
+ <div id="login-modal">
+   <div class="modal-content">
+     <h3>Entrar</h3>
+     <div id="error-msg">Insira um nome válido.</div>
+     <label for="login-name">Nome:</label>
+     <input type="text" id="login-name" />
+     <button id="login-submit-btn">Entrar</button>
+   </div>
+ </div>
+
+ <footer>
+   <p>&copy; 2025 Receitas Saborosas</p>
+ </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
