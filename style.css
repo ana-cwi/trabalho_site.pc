@@ -391,3 +391,42 @@ html {
 html {
   scroll-padding-top: 100px;
 }
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header h1 {
+    position: static;
+    transform: none;
+    font-size: 2rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .user-controls {
+    position: static;
+    transform: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
