@@ -32,14 +32,12 @@ const recipes = [
  }
 ];
 
-
 // Usuário simulado (sem backend)
 const usuario = {
  nome: null,
  pontos: 0,
  receitasFeitas: new Set()
 };
-
 
 // Referências do DOM
 const salgadasContainer = document.querySelector("#salgadas .recipes-list");
@@ -51,7 +49,6 @@ const loginBtn = document.getElementById("login-btn");
 const pontosSpan = document.getElementById("user-points");
 const userNameSpan = document.getElementById("user-name");
 const userInfo = document.getElementById("user-info");
-
 
 // Atualiza interface do usuário (login e pontos)
 function atualizarInterfaceUsuario() {
@@ -71,7 +68,6 @@ function atualizarInterfaceUsuario() {
  mostrarReceitas();
 }
 
-
 // Função para login/logout simples
 loginBtn.addEventListener("click", () => {
  if (usuario.nome) {
@@ -86,7 +82,6 @@ loginBtn.addEventListener("click", () => {
  }
  atualizarInterfaceUsuario();
 });
-
 
 // Função para filtrar e mostrar receitas
 function mostrarReceitas() {
@@ -208,12 +203,10 @@ function mostrarReceitas() {
   });
 }
 
-
 // Eventos para atualizar lista ao mudar filtros
 searchInput.addEventListener("input", mostrarReceitas);
 tempoSelect.addEventListener("change", mostrarReceitas);
 facilidadeSelect.addEventListener("change", mostrarReceitas);
-
 
 // Inicializa interface
 atualizarInterfaceUsuario();
