@@ -1,34 +1,54 @@
 // Dados das receitas (exemplo com imagens e links)
 const recipes = [
- {
+  {
    id: 1,
-   title: "Quiche de Legumes",
-   ingredientes: ["farinha de trigo", "manteiga", "queijo parmesão", "legumes", "ovos", "creme de leite"],
-   tempo: 70,
+   title: "Torta de Frango Fit",
+   ingredientes: ["frango desfiado", "molho de tomate", "creme de leite sem lactose", "ervilha", "milho", "batata", "ovos", "farinha de aveia", "amido de milho", "leite", "manteiga sem sal", "fermento em pó"],
+   tempo: 25,
+   facilidade: "fácil",
+   tipo: "salgada",
+   imagem: "https://blog.gsuplementos.com.br/wp-content/uploads/2022/10/torta-de-frango-fit.jpg",
+   link: "https://www.tudogostoso.com.br/receita/191993-torta-de-frango-fit.html"
+ },
+  {
+   id: 2,
+   title: "Strogonoff com Batata Doce",
+   ingredientes: ["peito de frango", "batata doce", "cebola", "molho de tomate", "pimenta do reino", "azeite", "tomate", "iogurte natural", "alecrim"],
+   tempo: 30,
    facilidade: "média",
+   tipo: "salgada",
+   imagem: "https://imagens.imirante.com.br/imagens/noticias/2022/03/09/1646835857-37644671.jpg?w=896&h=448&crop=1516%2C884%2C142%2C196&fit=crop&fm=webp&s=0a0ab643602537088201e3f1e9ab4f93",
+   link: "https://www.tudogostoso.com.br/receita/301063-strogonoff-fit-com-batata-doce.html"
+ },
+  {
+   id: 3,
+   title: "Quiche de Legumes",
+   ingredientes: ["farinha de trigo", "manteiga", "queijo parmesão", "legumes", "ovos", "creme de leite", "sal", "pimenta do reino"],
+   tempo: 70,
+   facilidade: "trabalhosa",
    tipo: "salgada",
    imagem: "https://www.bonde.com.br/api/images/proxy?quality=100&src=https://www.bonde.com.br/img/bondenews/2017/03/img_1_33_3373.jpg",
    link: "https://www.tudogostoso.com.br/receita/24584-quiche-de-legumes.html"
  },
  {
-   id: 2,
-   title: "Torta de Frango Cremosa",
-   ingredientes: ["frango", "creme de leite", "massa", "milho"],
+   id: 4,
+   title: "Bolo de Banana e Aveia",
+   ingredientes: ["aveia fina", "ovos", "bananas", "fermento", "óleo", "açúcar mascavo", "canela", "uva passa", "castanha de caju"],
    tempo: 60,
-   facilidade: "trabalhosa",
-   tipo: "salgada",
-   imagem: "https://via.placeholder.com/300x180?text=Torta+Frango",
-   link: "https://exemplo.com/receita/torta-frango"
+   facilidade: "fácil",
+   tipo: "doce",
+   imagem: "https://i0.wp.com/porkworld.com.br/wp-content/uploads/2025/01/bolo-de-aveia-e-banana.jpg?resize=324%2C160&ssl=1",
+   link: "https://www.tudogostoso.com.br/receita/100781-bolo-de-banana-e-aveia.html"
  },
- {
-   id: 3,
-   title: "Bolo de Chocolate Fofinho",
-   ingredientes: ["chocolate", "ovo", "farinha", "leite"],
-   tempo: 50,
+  {
+   id: 5,
+   title: "Brigadeiro Fitness",
+   ingredientes: ["leite desnatado", "cacau em pó", "chocolate granulado", "adoçante", "manteiga"],
+   tempo: 40,
    facilidade: "média",
    tipo: "doce",
-   imagem: "https://via.placeholder.com/300x180?text=Bolo+Chocolate",
-   link: "https://exemplo.com/receita/bolo-chocolate"
+   imagem: "https://s2.glbimg.com/6bnUZiJufySzAsa8Z1hDyz3wHkQ=/smart/e.glbimg.com/og/ed/f/original/2017/08/18/receita-brigadeiro-termogenico.jpg",
+   link: "https://www.tudogostoso.com.br/receita/301486-brigadeiro-fitness-sem-leite-condensado.html"
  }
 ];
 
