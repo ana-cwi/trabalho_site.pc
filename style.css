@@ -7,12 +7,14 @@
  --fundo: #fffdf9;
 }
 
+
  body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   background-color: var(--fundo);
   color: var(--marrom);
 }
+
 
 /* Cabeçalho */
 header {
@@ -26,10 +28,12 @@ header {
  box-sizing: border-box;
 }
 
+
 .header-container {
  max-width: 1000px;
  margin: 0 auto;
 }
+
 
 .header-top {
   display: grid;
@@ -38,6 +42,7 @@ header {
   position: relative;
   margin-bottom: 30px;
 }
+
 
 /* Posiciona o título no centro */
 header h1 {
@@ -49,12 +54,14 @@ header h1 {
   grid-column: 2;
 }
 
+
 .user-controls {
   display: flex;
   gap: 15px;
   align-items: center;
   justify-content: flex-end;
 }
+
 
 #login-btn {
   font-family: 'Raleway', sans-serif;
@@ -68,9 +75,11 @@ header h1 {
   transition: background-color 0.3s ease;
 }
 
+
 #login-btn:hover {
   background-color: #5c4033; /* um tom um pouco mais escuro para hover */
 }
+
 
 #user-info {
  font-size: 1rem;
@@ -78,9 +87,11 @@ header h1 {
  font-weight: 600;
 }
 
+
 .hidden {
  display: none;
 }
+
 
 /* Filtros */
 .filters {
@@ -89,6 +100,7 @@ header h1 {
  gap: 15px;
  justify-content: center;
 }
+
 
 .filters input,
 .filters select {
@@ -102,14 +114,17 @@ header h1 {
   font-family: 'Raleway', sans-serif;
 }
 
+
 .filters input::placeholder {
   color: #a67b5b;
   opacity: 0.85;
 }
 
+
 .filters select option {
   color: #5c4033; /* texto das opções internas (menu dropdown) */
 }
+
 
 /* Conteúdo principal */
 main {
@@ -118,9 +133,11 @@ main {
   padding: 10px 10px 40px; /* topo, laterais, baixo */
 }
 
+
 section {
  margin-bottom: 60px;
 }
+
 
 section h2 {
  font-size: 2rem;
@@ -130,11 +147,13 @@ section h2 {
  padding-bottom: 6px;
 }
 
+
 .recipes-list {
  display: flex;
  flex-direction: column;
  gap: 20px;
 }
+
 
 /* Cartão de receita */
 .recipe-card {
@@ -147,9 +166,11 @@ section h2 {
  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+
 .recipe-info {
  flex-grow: 1;
 }
+
 
 .recipe-title {
  font-weight: bold;
@@ -157,10 +178,12 @@ section h2 {
  color: var(--marrom);
 }
 
+
 .recipe-meta {
  font-size: 0.9rem;
  color: #444;
 }
+
 
 /* Botão marcar como feita */
 .mark-made-btn {
@@ -173,14 +196,17 @@ section h2 {
  cursor: pointer;
 }
 
+
 .mark-made-btn:hover:not(:disabled) {
  background-color: #5c4033;
 }
+
 
 .mark-made-btn:disabled {
  background-color: #ccc;
  cursor: not-allowed;
 }
+
 
 /* Modal de login */
 #login-modal {
@@ -192,9 +218,11 @@ section h2 {
  align-items: center;
 }
 
+
 #login-modal.active {
  display: flex;
 }
+
 
 .modal-content {
  background: white;
@@ -205,12 +233,14 @@ section h2 {
  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+
 .modal-content input {
  width: 100%;
  padding: 8px;
  margin-top: 10px;
  margin-bottom: 20px;
 }
+
 
 .modal-content button {
  padding: 10px 20px;
@@ -221,11 +251,13 @@ section h2 {
  cursor: pointer;
 }
 
+
 #error-msg {
  color: red;
  font-size: 0.9rem;
  display: none;
 }
+
 
 .expandable {
  flex-direction: column;
@@ -233,6 +265,7 @@ section h2 {
  padding: 0;
  overflow: hidden;
 }
+
 
 .recipe-toggle {
  background-color: var(--marrom-claro);
@@ -247,9 +280,11 @@ section h2 {
  font-weight: bold;
 }
 
+
 .recipe-toggle:hover {
  background-color: var(--marrom);
 }
+
 
 .recipe-details {
  display: none;
@@ -258,9 +293,11 @@ section h2 {
  border-radius: 0 0 10px 10px;
 }
 
+
 .recipe-details.open {
  display: block;
 }
+
 
 .recipe-details img {
   width: 70%; /* tamanho desejado */
@@ -271,6 +308,7 @@ section h2 {
   border-radius: 6px;
 }
 
+
 .recipe-details a {
  display: inline-block;
  margin: 10px 0;
@@ -278,6 +316,7 @@ section h2 {
  color: #8c5d38;
  font-weight: bold;
 }
+
 
 footer {
   background-color: #a67b5b;
@@ -287,10 +326,12 @@ footer {
   margin-top: 2em;
 }
 
+
 footer a {
   color: #ffe;
   text-decoration: underline;
 }
+
 
 /* Menu de navegação à esquerda */
 .navbar {
@@ -298,6 +339,7 @@ footer a {
   gap: 20px;
   justify-content: flex-start;
 }
+
 
 .navbar a {
   font-family: 'Raleway', sans-serif;
@@ -309,9 +351,11 @@ footer a {
   transition: background-color 0.3s ease;
 }
 
+
 .navbar a:hover {
   background-color: #8c5d38;
 }
+
 
 /* Seções Sobre e Contato */
 .extra-section {
@@ -320,12 +364,14 @@ footer a {
   border-top: 2px solid var(--laranja-terra);
 }
 
+
 .extra-section h2 {
   font-size: 2rem;
   color: var(--marrom);
   text-align: center;
   margin-bottom: 20px;
 }
+
 
 .extra-section .container {
   max-width: 800px;
@@ -336,20 +382,24 @@ footer a {
   text-align: center;
 }
 
+
 .extra-section a {
   color: var(--laranja-terra);
   font-weight: bold;
   text-decoration: underline;
 }
 
+
 /* Rolar suave ao clicar no menu */
 html {
   scroll-behavior: smooth;
 }
 
+
 html {
   scroll-padding-top: 100px;
 }
+
 
 @media (max-width: 768px) {
   .header-top {
@@ -358,21 +408,25 @@ html {
     gap: 12px;
   }
 
+
   header h1 {
     grid-column: 1;
     text-align: center;
     font-size: 2rem;
   }
 
+
   .navbar {
     justify-content: center;
     flex-wrap: wrap;
   }
 
+
   .user-controls {
     justify-content: center;
     width: 100%;
   }
+
 
   .filters {
     flex-direction: column;
@@ -380,6 +434,7 @@ html {
     padding: 0 20px;
     width: 100%;
   }
+
 
   .filters input,
   .filters select {
