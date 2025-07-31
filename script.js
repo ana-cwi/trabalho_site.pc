@@ -49,7 +49,58 @@ const recipes = [
    tipo: "doce",
    imagem: "https://s2.glbimg.com/6bnUZiJufySzAsa8Z1hDyz3wHkQ=/smart/e.glbimg.com/og/ed/f/original/2017/08/18/receita-brigadeiro-termogenico.jpg",
    link: "https://www.tudogostoso.com.br/receita/301486-brigadeiro-fitness-sem-leite-condensado.html"
- }
+ },
+ {
+   id: 6,
+   title: "Omelete",
+   ingredientes: ["Ovos, Vegetais a gosto (ex: espinafre, cogumelos, pimentões, cebola), Proteína magra (ex: frango cozido desfiado, peito de peru, presunto magro), Queijo (opcional, recomendado queijo magro), Sal, Pimenta, Azeite ou spray de cozinha"],
+   tempo: 5-10 minutos,
+   facilidade: "fácil",
+   tipo: "salgada",      
+   imagem:
+"https://www.receiteria.com.br/wp-content/uploads/omelete-de-frango-com-legumes-730x450.jpg",
+   link: "https://www.receiteria.com.br/receitas-de-omelete-fit/"
+ },
+{
+   id: 7,
+   title: "Quibe Fit",
+   ingredientes: ["Trigo para quibe fino, Carne moída magra ou frango moído, Cebola, Folhas de hortelã, Salsinha, Cominho, Canela, Sal, Pimenta, Azeite, Água"],
+   tempo: 60,
+   facilidade: "média",
+   tipo: "salgada",
+   imagem: "https://sabores-new.s3.amazonaws.com/public/2024/11/quibe-de-forno-saudavel-1024x494.webp",
+   link: "https://www.saboresajinomoto.com.br/receita/quibe-de-forno-saudavel"
+ },
+{
+   id: 8,
+   title: "Salada com Frango",
+   ingredientes: ["Peito de frango cozido (desfiado ou em cubos), Mix de folhas verdes (ex: alface, espinafre, rúcula), Vegetais variados (ex: tomate cereja, pepino, cenoura, pimentões), Gorduras saudáveis (ex: abacate, castanhas, sementes), Molho saudável (ex: azeite e limão, vinagrete), Sal, Pimenta"],
+   tempo: 10-15 minutos,
+   facilidade: "fácil",
+   tipo: "salgada",
+   imagem: "https://receitatodahora.com.br/wp-content/uploads/2023/03/salada-tropical-16-03-1200x900.jpg",
+   link: "https://receitas.globo.com/receitas-sadia/salada-colorida-com-frango.ghtml"
+ },
+{
+   id: 9,
+   title: "Sorvete de Fruta Caseiro",
+   ingredientes: [" Frutas congeladas (ex: bananas, frutas vermelhas, manga, abacaxi), Um pouco de líquido (ex: água, leite, leite vegetal, suco de fruta - apenas o suficiente para bater), Opcional: Um toque de adoçante natural (ex: mel, xarope de bordo) se a fruta não for doce o suficiente"],
+   tempo: 5-10 min,
+   facilidade: "fácil",
+   tipo: "doce",
+   imagem: "https://blog.gsuplementos.com.br/receitas-de-sorvete-fit/"
+   link: "https://s2-receitas.glbimg.com/qcj1X9MZZcf0INWF9X2rjd3bMGY=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2024/d/4/8Ga2fiT6yEc58RAobW6A/sorvete-de-banana-com-frutas-vermelhas-vegano.jpg"
+ },
+{
+   id: 10,
+   title: "Brigadeiro de banana",
+   ingredientes: [Bananas maduras, Cacau em pó (sem açúcar), Coco ralado ou nozes picadas (para cobrir), Opcional: Um toque de adoçante natural (ex: mel, xarope de bordo) se desejar"],
+   tempo: 15-20 minutos,
+   facilidade: "fácil",
+   tipo: "doce",
+   imagem: "https://vitat.com.br/receitas/images/recipeshandler.jpg?id=82798&tipo=r&default=s",
+   link: "https://blog.gsuplementos.com.br/brigadeiro-de-banana/"
+ },
 ];
 
 // Usuário simulado (sem backend)
